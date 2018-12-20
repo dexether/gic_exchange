@@ -1,0 +1,6 @@
+<ng-include src="'/templates/funds/_flash.html'"></ng-include>
+<ng-include ng-if="currency == 'btc'" src="'/templates/funds/withdraw_btc.html'"></ng-include>
+<ng-include ng-if="currency == 'eth'" src="'/templates/funds/withdraw_eth.html'"></ng-include>
+<ng-include ng-if="currency == 'gict'" src="'/templates/funds/withdraw_gict.html'"></ng-include>
+<ng-include ng-if="currency == 'gash'" src="'/templates/funds/withdraw_gash.html'"></ng-include>
+<ng-include ng-if="currency == 'ctwd'" src="'/templates/funds/withdraw_ctwd.html'"></ng-include>

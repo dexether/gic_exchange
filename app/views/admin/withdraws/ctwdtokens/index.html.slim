@@ -1,0 +1,11 @@
+- unless @one_ctwdtokens.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {ctwdtokens: @one_ctwdtokens}
+- unless @all_ctwdtokens.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {ctwdtokens: @all_ctwdtokens}
+
+- if @all_ctwdtokens.empty? and @one_ctwdtokens.empty?
+  h3.text-info.text-center = t('.empty')

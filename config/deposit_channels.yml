@@ -1,0 +1,34 @@
+- id: 200
+  key: satoshi
+  currency: btc
+  min_confirm: 1
+  max_confirm: 3
+  min_amount: 0
+
+- id: 300
+  key: ether
+  currency: eth
+  min_confirm: 1
+  max_confirm: 3
+  min_amount: 0
+
+- id: 400
+  key: gictoken
+  currency: gict
+  min_confirm: 1
+  max_confirm: 3
+  min_amount: 0
+
+- id: 500
+  key: gameash
+  currency: gash
+  min_confirm: 1
+  max_confirm: 3
+  min_amount: 0
+
+- id: 600
+  key: ctwdtoken
+  currency: ctwd
+  min_confirm: 1
+  max_confirm: 3
+  min_amount: 0

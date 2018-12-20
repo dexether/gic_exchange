@@ -1,0 +1,11 @@
+- unless @one_gictokens.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {gictokens: @one_gictokens}
+- unless @all_gictokens.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {gictokens: @all_gictokens}
+
+- if @all_gictokens.empty? and @one_gictokens.empty?
+  h3.text-info.text-center = t('.empty')

@@ -1,0 +1,58 @@
+<h3 ng-bind="'fund_sources.add_bank' | t"></h3>
+<form bank-validator action="" method="POST" id="bank-form">
+  <div class="row">
+    <div class="col-md-16">
+      <div class="form-group">
+        <label>{{'fund_sources.country' | t}}</label>
+        <select class="form-control" ng-model="country">
+          <option value="US">{{'fund_sources.country_name.us' | t}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="form-group">
+        <label>{{'fund_sources.currency' | t}}</label>
+        <select class="form-control" ng-model="currency">
+          <option value="usd">{{'funds.currency_name.usd' | t}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-14">
+      <div class="form-group">
+        <label>{{'fund_sources.name' | t}}</label>
+        <input class="form-control" ng-model="account_holder_name" type="text" placeholder="Jane Doe" autocomplete="off">
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="form-group">
+        <label>{{'fund_sources.bank.account_type' | t}}</label>
+        <select class="form-control" ng-model="account_holder_type">
+          <option value="individual">{{'fund_sources.bank.type.individual' | t}}</option>
+          <option value="company">{{'fund_sources.bank.type.company' | t}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label>{{'fund_sources.bank.routing_number' | t}}</label>
+        <input class="form-control" ng-model="routing_number" type="tel" size="12" placeholder="111000025" autocomplete="off">
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <label>{{'fund_sources.bank.account_number' | t}}</label>
+        <input class="form-control" ng-model="account_number" type="tel" size="20" placeholder="000123456789" autocomplete="off">
+      </div>
+    </div>
+  </div>
+  <small id="bank-errors" class="text-danger" role="alert">{{ ccErrMsg }}</small>
+  <div class="row">
+    <div class="col-md-24">
+      <button class="btn btn-block btn-success submit" type="submit" ng-bind="'fund_sources.add' | t"></button>
+    </div>
+  </div>
+</form>

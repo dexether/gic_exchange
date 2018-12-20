@@ -1,0 +1,177 @@
+en:
+  js:
+    brand: PickCoin Exchange
+    submit: Submit
+    cancel: Cancel
+    confirm: Confirm
+    fund_sources:
+      manage_account: Account Management
+      manage_account_desc: To facilitate the choice of account
+      manage_coin_address: Coin Address Management
+      manage_coin_address_desc: To facilitate the choice of coin withdrawals address
+      label: Label
+      source_brand: Card Brand/Bank Name
+      last4: Last4
+      country: Country
+      country_name:
+        us: United States
+      currency: Currency
+      name: Full Legal Name
+      bank:
+        routing_number: Routing Number
+        account_number: Account Number
+        account_type: Account Type
+        type:
+          individual: Individual
+          company: Company
+      address: Address
+      status: Status
+      action: Action
+      add: Add
+      add_bank: Add Bank
+      add_card: Add Card
+      remove: Remove
+      default: Default
+      verify:
+        title: Verify Bank Account
+        description: We sent two small deposit amounts to your bank account. Log in to your bank's website or app and enter the amounts you see in the fields below.
+        amount1: Deposit amount 1
+        amount2: Deposit amount 2
+        amount1: Deposit amount 1
+        amount1: Deposit amount 1
+    funds:
+      deposit: Deposit
+      withdraw: Withdraw
+      currency_name:
+        btc: BTC
+        usd: USD
+        eth: ETH
+        gash: GASH
+        gict: GICT
+        ctwd: CTWD
+      deposit_usd:
+        title: US Dollar Deposit
+        desc: "To deposit USD, please input card or bank details and deposit information and submit."
+        attention: "Note: You need to use Card or Verified U.S. Bank only."
+        deposit_name: Your Name
+        manage: Manage
+        amount: Deposit Amount
+        min_amount: At least 100 Dollar
+        deposit_account: Deposit Account
+      deposit_btc:
+        title: BTC Deposit
+      deposit_eth:
+        title: ETH Deposit
+      deposit_gash:
+        title: GASH Deposit
+      deposit_gict:
+        title: GICT Deposit
+      deposit_ctwd:
+        title: CTWD Deposit
+      deposit_coin:
+        address: Address
+        new_address: New Address
+        confirm_gen_new_address: You sure want to generate a new deposit address?
+        open-wallet: Please use your common wallet services, local wallet, mobile terminal or online wallet, select a payment and send.
+        detail: Please paste the address blow in your wallet, and fill in the amount you want to deposit, then confirm and send.
+        scan-qr: Scanning QR code to Pay for In the mobile terminal wallet.
+        after_deposit: Once you complete sending, you can check the status of your new deposit below.
+        generate-new: Generate new address
+
+      deposit_history:
+        title: Deposit History
+        number: '#'
+        identification: Identification Code
+        time: Time
+        txid: Transaction ID
+        confirmations: Confirmations
+        from: From
+        amount: Amount
+        state_and_action: "State/Action"
+        cancel: cancel
+        no_data: There is no history data
+        submitting: Submitting
+        cancelled: Cancelled
+        submitted: Submitted
+        accepted: Accepted
+        rejected: Rejected
+        checked: Checked
+        warning: Warning
+        suspect: Suspect
+
+      withdraw_usd:
+        title: US Dollar Withdraw
+        intro: Select the account to cash withdrawal amount and enter the account number and complete submission.
+        attention: "Note: You can use verified U.S. bank accounts or Debit Card only."
+        balance: Balance
+        account_name: Account Name
+        withdraw_address: Withdraw Address
+        withdraw_amount: Withdraw Amount
+        manage_withdraw: Manage Withdraw
+        fee_explain: About Fee
+        min: At least
+        withdraw_all: Withdraw all
+      withdraw_btc:
+        title: BTC Withdraw
+      withdraw_eth:
+        title: ETH Withdraw
+      withdraw_gash:
+        title: GASH Withdraw
+      withdraw_gict:
+        title: GICT Withdraw
+      withdraw_ctwd:
+        title: CTWD Withdraw
+      withdraw_coin:
+        intro: Please fill in the address and amount, then submit the form. It will be confirmed in 30 minutes after admin approved.
+        label: Label
+        balance: Balance
+        amount: Amount
+        manage_withdraw: Manage Address
+        min: At least
+        withdraw_all: Withdraw all
+        fee_explain: About Fee
+
+      withdraw_history:
+        title: Withdraw History
+        number: Number
+        withdraw_time: Time
+        withdraw_account: Withdraw Account
+        withdraw_address: Address
+        withdraw_amount: Amount
+        actual_amount: Actual Amount
+        fee: Fee
+        miner_fee: Fee
+        state_and_action: "State/Action"
+        cancel: Cancel
+        no_data: There is no history data
+        submitting: Submitting
+        submitted: Submitted
+        rejected: Rejected
+        accepted: Accepted
+        suspect: Suspect
+        processing: Processing
+        coin_ready: Coin Ready
+        coin_done: Coin Done
+        done: Done
+        almost_done: Almost Done
+        canceled: Cancelled
+        failed: Failed
+
+    auth:
+      please_active_two_factor: Please set mobile number or google authenticator first.
+      submit: Submit
+      otp_placeholder: 6-digit password
+      google_app: Google Authenticator
+      sms: SMS Verification Messages
+      send_code: Send Code
+      send_code_alt: Resend in COUNT seconds
+      hints:
+        app: Google Authenticator will re-generate a new password every thirty seconds, please input timely.
+        sms: We'll send a text message to you phone with verify code.
+
+    markets:
+      market_list:
+        all: All Market
+        btc: BTC Market
+        eth: ETH Market
+

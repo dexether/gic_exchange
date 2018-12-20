@@ -1,0 +1,54 @@
+- id: 200
+  key: satoshi
+  currency: btc
+  min_confirm: 1
+  max_confirm: 6
+  inuse: true
+  fixed: 8
+  min_amount: 0.0050
+  fee: 0.0005
+  type: WithdrawChannelSatoshi
+
+- id: 300
+  key: ether
+  currency: eth
+  min_confirm: 1
+  max_confirm: 6
+  inuse: true
+  fixed: 8
+  min_amount: 0.0500
+  fee: 0.0050
+  type: WithdrawChannelEthereum
+
+- id: 400
+  key: gictoken
+  currency: gict
+  min_confirm: 1
+  max_confirm: 6
+  inuse: true
+  fixed: 8
+  min_amount: 100.0000
+  fee: 50.0000
+  type: WithdrawChannelGictoken
+
+- id: 500
+  key: gameash
+  currency: gash
+  min_confirm: 1
+  max_confirm: 6
+  inuse: true
+  fixed: 8
+  min_amount: 100.0000
+  fee: 50.0000
+  type: WithdrawChannelGameash
+
+- id: 600
+  key: ctwdtoken
+  currency: ctwd
+  min_confirm: 1
+  max_confirm: 6
+  inuse: true
+  fixed: 8
+  min_amount: 500.0000
+  fee: 100.0000
+  type: WithdrawChannelCtwdtoken

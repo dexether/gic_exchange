@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @gameash.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @gameash, :id
+          = item_for @gameash, :created_at
+          = item_for @gameash, :aasm_state_text
+          hr.split
+          = item_for @gameash.member, :name
+          = item_for @gameash, :fund_extra
+          = item_for @gameash, :fund_uid do
+            span = @gameash.fund_uid.truncate(22)
+          = item_for @gameash, :amount
+          hr.split
+          = item_for @gameash, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @gameash.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @gameash]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @gameash.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @gameash]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @gameash.member}
+    = render partial: 'shared/admin/account', locals: {account: @gameash.account}

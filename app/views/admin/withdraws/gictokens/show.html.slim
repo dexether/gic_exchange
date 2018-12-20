@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @gictoken.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @gictoken, :id
+          = item_for @gictoken, :created_at
+          = item_for @gictoken, :aasm_state_text
+          hr.split
+          = item_for @gictoken.member, :name
+          = item_for @gictoken, :fund_extra
+          = item_for @gictoken, :fund_uid do
+            span = @gictoken.fund_uid.truncate(22)
+          = item_for @gictoken, :amount
+          hr.split
+          = item_for @gictoken, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @gictoken.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @gictoken]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @gictoken.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @gictoken]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @gictoken.member}
+    = render partial: 'shared/admin/account', locals: {account: @gictoken.account}

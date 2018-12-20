@@ -1,0 +1,11 @@
+- unless @one_gameashes.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {gameashes: @one_gameashes}
+- unless @all_gameashes.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {gameashes: @all_gameashes}
+
+- if @all_gameashes.empty? and @one_gameashes.empty?
+  h3.text-info.text-center = t('.empty')
